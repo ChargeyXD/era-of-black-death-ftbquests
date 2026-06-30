@@ -1,125 +1,126 @@
 {
-    default_hide_dependency_lines: false
-    default_quest_shape: ""
-    filename: "spellbook_addons"
-    group: "1000000000000002"
-    icon: "apprenticecodex:apprentice_desk"
-    id: "3002000000000001"
-    order_index: 1
-    quest_links: []
-    quests: [
-        {
-            id: "3002000000000002"
-            shape: "hexagon"
-            size: 1.5d
-            title: "Apprentice Codex"
-            subtitle: "Craft the Apprentice Desk from Apprentice Codex — expands Iron's Spellbooks with spell guns, staves and new spells."
-            tasks: [{ id: "3002000000000003" type: "item" item: "apprenticecodex:apprentice_desk" }]
-            rewards: [
-                { id: "3002000000000004" type: "item" item: { id: "apprenticecodex:iron_spellcaster_gun" count: 1 } }
-                { id: "3002000000000005" type: "xp_levels" xp_levels: 5 }
-            ]
-            x: 0.0d  y: 0.0d
-        }
-        {
-            dependencies: ["3002000000000002"]
-            id: "3002000000000010"
-            title: "Spell Guns"
-            subtitle: "Craft a Spell Caster Gun — fires stored spells like a magical revolver."
-            tasks: [{ id: "3002000000000011" type: "item" item: "apprenticecodex:copper_spellcaster_gun" }]
-            rewards: [
-                { id: "3002000000000012" type: "item" item: { id: "apprenticecodex:gold_spellcaster_gun" count: 1 } }
-                { id: "3002000000000013" type: "xp_levels" xp_levels: 5 }
-            ]
-            x: 2.0d  y: 0.0d
-        }
-        {
-            dependencies: ["3002000000000002"]
-            id: "3002000000000020"
-            title: "Swing Cast Staves"
-            subtitle: "Craft a Swing Cast Staff — cast spells on melee hit."
-            tasks: [{ id: "3002000000000021" type: "item" item: "apprenticecodex:copper_swingcast_staff" }]
-            rewards: [
-                { id: "3002000000000022" type: "item" item: { id: "apprenticecodex:iron_swingcast_staff" count: 1 } }
-                { id: "3002000000000023" type: "xp_levels" xp_levels: 5 }
-            ]
-            x: 2.0d  y: 2.0d
-        }
-        {
-            dependencies: ["3002000000000002"]
-            id: "3002000000000030"
-            title: "Spell Amplifiers"
-            subtitle: "Craft a Spell Amplifier ring — boosts spell power for equipped spell school."
-            tasks: [{ id: "3002000000000031" type: "item" item: "apprenticecodex:copper_spell_amplifier" }]
-            rewards: [
-                { id: "3002000000000032" type: "item" item: { id: "apprenticecodex:gold_spell_amplifier" count: 1 } }
-                { id: "3002000000000033" type: "xp_levels" xp_levels: 5 }
-            ]
-            x: 2.0d  y: -2.0d
-        }
-        {
-            dependencies: ["3002000000000010"]
-            id: "3002000000000040"
-            title: "Codex Spells — Mana Slash"
-            subtitle: "Unlock Mana Slash — an Apprentice Codex spell that converts mana into a cutting blade."
-            tasks: [{ id: "3002000000000041" type: "item" item: "apprenticecodex:mana_slash" }]
-            rewards: [{ id: "3002000000000042" type: "xp_levels" xp_levels: 5 }]
-            x: 4.0d  y: 0.0d
-        }
-        {
-            dependencies: ["3002000000000002"]
-            id: "3002000000000050"
-            title: "Cataclysm Spells"
-            subtitle: "Unlock Cataclysm Spellbooks spells — Blazing AoE, Frozen Bullet, Hellish Blade and more."
-            tasks: [{ id: "3002000000000051" type: "checkmark" }]
-            rewards: [
-                { id: "3002000000000052" type: "item" item: { id: "cataclysm:blazing_log" count: 4 } }
-                { id: "3002000000000053" type: "xp_levels" xp_levels: 8 }
-            ]
-            x: 0.0d  y: 2.0d
-        }
-        {
-            dependencies: ["3002000000000002"]
-            id: "3002000000000060"
-            title: "Majos Spell Enchantment"
-            subtitle: "Use Majos Spell Enchantment — enchant weapons with spell effects like Death Chain Lightning."
-            tasks: [{ id: "3002000000000061" type: "checkmark" }]
-            rewards: [{ id: "3002000000000062" type: "xp_levels" xp_levels: 6 }]
-            x: 0.0d  y: -2.0d
-        }
-        {
-            dependencies: ["3002000000000002"]
-            id: "3002000000000070"
-            title: "Iron's Arms"
-            subtitle: "Craft Iron's Arms weapons — melee weapons with integrated spell slots."
-            tasks: [{ id: "3002000000000071" type: "item" item: "ironsarms:claymore" }]
-            rewards: [
-                { id: "3002000000000072" type: "item" item: { id: "ironsarms:rapier" count: 1 } }
-                { id: "3002000000000073" type: "xp_levels" xp_levels: 6 }
-            ]
-            x: -2.0d  y: 0.0d
-        }
-        {
-            dependencies: ["3002000000000002"]
-            id: "3002000000000080"
-            title: "Alex's Caves Spells"
-            subtitle: "Unlock Alex's Caves Spellbooks spells — summon Vesper and Grottoceratops."
-            tasks: [{ id: "3002000000000081" type: "checkmark" }]
-            rewards: [{ id: "3002000000000082" type: "xp_levels" xp_levels: 6 }]
-            x: -2.0d  y: 2.0d
-        }
-        {
-            dependencies: ["3002000000000040"]
-            id: "3002000000000090"
-            title: "Netherite Swing Cast Staff"
-            subtitle: "Craft the Netherite Swing Cast Staff — the strongest melee spell launcher."
-            tasks: [{ id: "3002000000000091" type: "item" item: "apprenticecodex:netherite_swingcast_staff" }]
-            rewards: [
-                { id: "3002000000000092" type: "item" item: { id: "apprenticecodex:diamond_swingcast_staff" count: 1 } }
-                { id: "3002000000000093" type: "xp_levels" xp_levels: 10 }
-            ]
-            x: 4.0d  y: 2.0d
-        }
-    ]
-    title: "&d\uD83D\uDCDA Spellbook Addons"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "spellbook_addons"
+	group: "1000000000000002"
+	icon: "apprenticecodex:apprentice_desk"
+	id: "3002000000000001"
+	images: []
+	order_index: 1
+	quest_links: []
+	quests: [
+		{
+			id: "3002000000000002"
+			shape: "hexagon"
+			size: 1.5d
+			title: "Apprentice Codex"
+			subtitle: "Craft the Apprentice Desk from Apprentice Codex — expands Iron's Spellbooks with spell guns, staves and new spells."
+			tasks: [{ id: "3002000000000003" type: "item" item: "apprenticecodex:apprentice_desk" }]
+			rewards: [
+				{ id: "3002000000000004" type: "item" item: { Count: 1 id: "apprenticecodex:iron_spellcaster_gun" tag: { Damage: 0 } } }
+				{ id: "3002000000000005" type: "xp" xp: 125 }
+			]
+			x: 0.0d  y: 0.0d
+		}
+		{
+			dependencies: ["3002000000000002"]
+			id: "3002000000000010"
+			title: "Spell Guns"
+			subtitle: "Craft a Spell Caster Gun — fires stored spells like a magical revolver."
+			tasks: [{ id: "3002000000000011" type: "item" item: "apprenticecodex:copper_spellcaster_gun" }]
+			rewards: [
+				{ id: "3002000000000012" type: "item" item: { Count: 1 id: "apprenticecodex:gold_spellcaster_gun" tag: { Damage: 0 } } }
+				{ id: "3002000000000013" type: "xp" xp: 125 }
+			]
+			x: 2.0d  y: 0.0d
+		}
+		{
+			dependencies: ["3002000000000002"]
+			id: "3002000000000020"
+			title: "Swing Cast Staves"
+			subtitle: "Craft a Swing Cast Staff — cast spells on melee hit."
+			tasks: [{ id: "3002000000000021" type: "item" item: "apprenticecodex:copper_swingcast_staff" }]
+			rewards: [
+				{ id: "3002000000000022" type: "item" item: { Count: 1 id: "apprenticecodex:iron_swingcast_staff" tag: { Damage: 0 } } }
+				{ id: "3002000000000023" type: "xp" xp: 125 }
+			]
+			x: 2.0d  y: 2.0d
+		}
+		{
+			dependencies: ["3002000000000002"]
+			id: "3002000000000030"
+			title: "Spell Amplifiers"
+			subtitle: "Craft a Spell Amplifier ring — boosts spell power for equipped spell school."
+			tasks: [{ id: "3002000000000031" type: "item" item: "apprenticecodex:copper_spell_amplifier" }]
+			rewards: [
+				{ id: "3002000000000032" type: "item" item: { Count: 1 id: "apprenticecodex:gold_spell_amplifier" tag: { Damage: 0 } } }
+				{ id: "3002000000000033" type: "xp" xp: 125 }
+			]
+			x: 2.0d  y: -2.0d
+		}
+		{
+			dependencies: ["3002000000000010"]
+			id: "3002000000000040"
+			title: "Codex Spells — Mana Slash"
+			subtitle: "Unlock Mana Slash — an Apprentice Codex spell that converts mana into a cutting blade."
+			tasks: [{ id: "3002000000000041" type: "item" item: "apprenticecodex:mana_slash" }]
+			rewards: [{ id: "3002000000000042" type: "xp" xp: 125 }]
+			x: 4.0d  y: 0.0d
+		}
+		{
+			dependencies: ["3002000000000002"]
+			id: "3002000000000050"
+			title: "Cataclysm Spells"
+			subtitle: "Unlock Cataclysm Spellbooks spells — Blazing AoE, Frozen Bullet, Hellish Blade and more."
+			tasks: [{ id: "3002000000000051" type: "checkmark" }]
+			rewards: [
+				{ id: "3002000000000052" type: "item" item: { Count: 4 id: "cataclysm:blazing_log" tag: { Damage: 0 } } }
+				{ id: "3002000000000053" type: "xp" xp: 200 }
+			]
+			x: 0.0d  y: 2.0d
+		}
+		{
+			dependencies: ["3002000000000002"]
+			id: "3002000000000060"
+			title: "Majos Spell Enchantment"
+			subtitle: "Use Majos Spell Enchantment — enchant weapons with spell effects like Death Chain Lightning."
+			tasks: [{ id: "3002000000000061" type: "checkmark" }]
+			rewards: [{ id: "3002000000000062" type: "xp" xp: 150 }]
+			x: 0.0d  y: -2.0d
+		}
+		{
+			dependencies: ["3002000000000002"]
+			id: "3002000000000070"
+			title: "Iron's Arms"
+			subtitle: "Craft Iron's Arms weapons — melee weapons with integrated spell slots."
+			tasks: [{ id: "3002000000000071" type: "item" item: "ironsarms:claymore" }]
+			rewards: [
+				{ id: "3002000000000072" type: "item" item: { Count: 1 id: "ironsarms:rapier" tag: { Damage: 0 } } }
+				{ id: "3002000000000073" type: "xp" xp: 150 }
+			]
+			x: -2.0d  y: 0.0d
+		}
+		{
+			dependencies: ["3002000000000002"]
+			id: "3002000000000080"
+			title: "Alex's Caves Spells"
+			subtitle: "Unlock Alex's Caves Spellbooks spells — summon Vesper and Grottoceratops."
+			tasks: [{ id: "3002000000000081" type: "checkmark" }]
+			rewards: [{ id: "3002000000000082" type: "xp" xp: 150 }]
+			x: -2.0d  y: 2.0d
+		}
+		{
+			dependencies: ["3002000000000040"]
+			id: "3002000000000090"
+			title: "Netherite Swing Cast Staff"
+			subtitle: "Craft the Netherite Swing Cast Staff — the strongest melee spell launcher."
+			tasks: [{ id: "3002000000000091" type: "item" item: "apprenticecodex:netherite_swingcast_staff" }]
+			rewards: [
+				{ id: "3002000000000092" type: "item" item: { Count: 1 id: "apprenticecodex:diamond_swingcast_staff" tag: { Damage: 0 } } }
+				{ id: "3002000000000093" type: "xp" xp: 250 }
+			]
+			x: 4.0d  y: 2.0d
+		}
+	]
+	title: "&d\uD83D\uDCDA Spellbook Addons"
 }
