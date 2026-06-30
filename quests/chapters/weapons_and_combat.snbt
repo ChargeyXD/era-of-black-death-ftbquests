@@ -5,6 +5,7 @@
     group: "1000000000000004"
     icon: "simplyswords:greatsword"
     id: "5001000000000001"
+    images: []
     order_index: 0
     quest_links: []
     quests: [
@@ -16,8 +17,8 @@
             subtitle: "Craft a Simply Swords weapon — Greatswords, Rapiers, Spears and more."
             tasks: [{ id: "5001000000000003" type: "item" item: "simplyswords:greatsword" }]
             rewards: [
-                { id: "5001000000000004" type: "item" item: { id: "simplyswords:longsword" count: 1 } }
-                { id: "5001000000000005" type: "xp_levels" xp_levels: 3 }
+                { id: "5001000000000004" type: "item" item: { Count: 1 id: "simplyswords:longsword" tag: { Damage: 0 } } }
+                { id: "5001000000000005" type: "xp" xp: 100 }
             ]
             x: 0.0d  y: 0.0d
         }
@@ -27,7 +28,7 @@
             title: "Falchion Moveset"
             subtitle: "Unlock Falchion Moveset — fluid combos that chain into devastating finishers."
             tasks: [{ id: "5001000000000011" type: "item" item: "falchionmoveset:falchion" }]
-            rewards: [{ id: "5001000000000012" type: "xp_levels" xp_levels: 4 }]
+            rewards: [{ id: "5001000000000012" type: "xp" xp: 125 }]
             x: 2.0d  y: 0.0d
         }
         {
@@ -37,8 +38,8 @@
             subtitle: "Craft a magical bow from Simply Bows — each fires unique arrow effects."
             tasks: [{ id: "5001000000000021" type: "item" item: "simplybows:bubble_bow" }]
             rewards: [
-                { id: "5001000000000022" type: "item" item: { id: "simplybows:homing_arrow" count: 16 } }
-                { id: "5001000000000023" type: "xp_levels" xp_levels: 4 }
+                { id: "5001000000000022" type: "item" item: { Count: 16 id: "simplybows:homing_arrow" tag: { Damage: 0 } } }
+                { id: "5001000000000023" type: "xp" xp: 125 }
             ]
             x: 0.0d  y: 2.0d
         }
@@ -49,8 +50,8 @@
             subtitle: "Wield Peyro's Scythe — a cosmic weapon commanding black flame and holy lances."
             tasks: [{ id: "5001000000000031" type: "item" item: "peyroscythe:made_in_heaven" }]
             rewards: [
-                { id: "5001000000000032" type: "xp_levels" xp_levels: 10 }
-                { id: "5001000000000033" type: "item" item: { id: "ironsspellbooks:holy_upgrade_orb" count: 2 } }
+                { id: "5001000000000032" type: "xp" xp: 350 }
+                { id: "5001000000000033" type: "item" item: { Count: 2 id: "ironsspellbooks:holy_upgrade_orb" tag: { Damage: 0 } } }
             ]
             x: 2.0d  y: -2.0d
         }
@@ -60,7 +61,7 @@
             title: "Fantasy Weapons"
             subtitle: "Craft Fantasy Weapons — ornate swords and axes of mythological aesthetic."
             tasks: [{ id: "5001000000000041" type: "item" item: "fantasy_weapons:mythril_sword" }]
-            rewards: [{ id: "5001000000000042" type: "xp_levels" xp_levels: 5 }]
+            rewards: [{ id: "5001000000000042" type: "xp" xp: 150 }]
             x: 0.0d  y: -2.0d
         }
         {
@@ -70,8 +71,8 @@
             subtitle: "Craft Iron's Arms weapons — spellbook-infused melee with locked spell slots."
             tasks: [{ id: "5001000000000051" type: "item" item: "ironsarms:claymore" }]
             rewards: [
-                { id: "5001000000000052" type: "item" item: { id: "ironsarms:rapier" count: 1 } }
-                { id: "5001000000000053" type: "xp_levels" xp_levels: 5 }
+                { id: "5001000000000052" type: "item" item: { Count: 1 id: "ironsarms:rapier" tag: { Damage: 0 } } }
+                { id: "5001000000000053" type: "xp" xp: 175 }
             ]
             x: 2.0d  y: 2.0d
         }
@@ -82,8 +83,8 @@
             subtitle: "Use Apotheosis to push enchantments beyond vanilla limits."
             tasks: [{ id: "5001000000000061" type: "item" item: "apotheosis:infusion_table" }]
             rewards: [
-                { id: "5001000000000062" type: "item" item: { id: "apotheosis:boss_trophy" count: 1 } }
-                { id: "5001000000000063" type: "xp_levels" xp_levels: 6 }
+                { id: "5001000000000062" type: "item" item: { Count: 1 id: "apotheosis:boss_trophy" tag: { Damage: 0 } } }
+                { id: "5001000000000063" type: "xp" xp: 200 }
             ]
             x: 4.0d  y: 2.0d
         }
@@ -94,8 +95,8 @@
             subtitle: "Obtain a TACZ firearm — craft ammo and prepare for modern warfare."
             tasks: [{ id: "5001000000000071" type: "item" item: "tacz:pistol" }]
             rewards: [
-                { id: "5001000000000072" type: "item" item: { id: "tacz:pistol_ammo" count: 32 } }
-                { id: "5001000000000073" type: "xp_levels" xp_levels: 5 }
+                { id: "5001000000000072" type: "item" item: { Count: 32 id: "tacz:pistol_ammo" tag: { Damage: 0 } } }
+                { id: "5001000000000073" type: "xp" xp: 150 }
             ]
             x: 0.0d  y: 4.0d
         }
@@ -106,8 +107,8 @@
             subtitle: "Equip Fantasy Armor — each set grants unique bonuses and spell container slots."
             tasks: [{ id: "5001000000000081" type: "item" item: "fantasy_armor:mythril_chestplate" }]
             rewards: [
-                { id: "5001000000000082" type: "xp_levels" xp_levels: 6 }
-                { id: "5001000000000083" type: "item" item: { id: "fantasy_armor:mythril_helmet" count: 1 } }
+                { id: "5001000000000082" type: "xp" xp: 200 }
+                { id: "5001000000000083" type: "item" item: { Count: 1 id: "fantasy_armor:mythril_helmet" tag: { Damage: 0 } } }
             ]
             x: 4.0d  y: -2.0d
         }
@@ -117,7 +118,7 @@
             title: "Armor of the Ages"
             subtitle: "Discover Armor of the Ages — era-themed armor from Bronze to beyond Netherite."
             tasks: [{ id: "5001000000000091" type: "item" item: "armoroftheages:bronze_chestplate" }]
-            rewards: [{ id: "5001000000000092" type: "xp_levels" xp_levels: 6 }]
+            rewards: [{ id: "5001000000000092" type: "xp" xp: 200 }]
             x: 6.0d  y: -2.0d
         }
         {
@@ -127,8 +128,8 @@
             subtitle: "Find a Relic — powerful artifacts with unique passive and active abilities."
             tasks: [{ id: "5001000000000101" type: "item" item: "relics:lucky_horseshoe" }]
             rewards: [
-                { id: "5001000000000102" type: "item" item: { id: "relics:researching_table" count: 1 } }
-                { id: "5001000000000103" type: "xp_levels" xp_levels: 5 }
+                { id: "5001000000000102" type: "item" item: { Count: 1 id: "relics:researching_table" tag: { Damage: 0 } } }
+                { id: "5001000000000103" type: "xp" xp: 150 }
             ]
             x: -2.0d  y: 0.0d
         }
@@ -138,7 +139,7 @@
             title: "Artifacts"
             subtitle: "Collect Artifacts — trinkets that grant unique magical abilities when worn."
             tasks: [{ id: "5001000000000111" type: "item" item: "artifacts:lucky_scarf" }]
-            rewards: [{ id: "5001000000000112" type: "xp_levels" xp_levels: 5 }]
+            rewards: [{ id: "5001000000000112" type: "xp" xp: 150 }]
             x: -2.0d  y: 2.0d
         }
     ]

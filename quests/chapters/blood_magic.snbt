@@ -5,6 +5,7 @@
     group: "1000000000000002"
     icon: "bloodmagic:weak_blood_orb"
     id: "3004000000000001"
+    images: []
     order_index: 3
     quest_links: []
     quests: [
@@ -16,8 +17,8 @@
             subtitle: "Build your first Blood Altar and sacrifice for LP."
             tasks: [{ id: "3004000000000003" type: "item" item: "bloodmagic:blood_altar" }]
             rewards: [
-                { id: "3004000000000004" type: "item" item: { id: "bloodmagic:weak_blood_orb" count: 1 } }
-                { id: "3004000000000005" type: "xp_levels" xp_levels: 3 }
+                { id: "3004000000000004" type: "item" item: { Count: 1 id: "bloodmagic:weak_blood_orb" tag: { Damage: 0 } } }
+                { id: "3004000000000005" type: "xp" xp: 100 }
             ]
             x: 0.0d  y: 0.0d
         }
@@ -27,7 +28,7 @@
             title: "Sacrificial Dagger"
             subtitle: "Craft a Sacrificial Dagger and begin ritual sacrifice."
             tasks: [{ id: "3004000000000011" type: "item" item: "bloodmagic:sacrificial_dagger" }]
-            rewards: [{ id: "3004000000000012" type: "xp_levels" xp_levels: 3 }]
+            rewards: [{ id: "3004000000000012" type: "xp" xp: 100 }]
             x: 2.0d  y: 0.0d
         }
         {
@@ -37,8 +38,8 @@
             subtitle: "Craft a Sigil of Holding — carry multiple active sigils at once."
             tasks: [{ id: "3004000000000021" type: "item" item: "bloodmagic:sigil_of_holding" }]
             rewards: [
-                { id: "3004000000000022" type: "item" item: { id: "bloodmagic:water_sigil" count: 1 } }
-                { id: "3004000000000023" type: "xp_levels" xp_levels: 5 }
+                { id: "3004000000000022" type: "item" item: { Count: 1 id: "bloodmagic:water_sigil" tag: { Damage: 0 } } }
+                { id: "3004000000000023" type: "xp" xp: 175 }
             ]
             x: 4.0d  y: 0.0d
         }
@@ -49,8 +50,8 @@
             subtitle: "Craft a piece of Living Armor — upgradeable magical armor."
             tasks: [{ id: "3004000000000031" type: "item" item: "bloodmagic:living_chestplate" }]
             rewards: [
-                { id: "3004000000000032" type: "item" item: { id: "bloodmagic:reinforced_slate" count: 4 } }
-                { id: "3004000000000033" type: "xp_levels" xp_levels: 8 }
+                { id: "3004000000000032" type: "item" item: { Count: 4 id: "bloodmagic:reinforced_slate" tag: { Damage: 0 } } }
+                { id: "3004000000000033" type: "xp" xp: 300 }
             ]
             x: 6.0d  y: 0.0d
         }
@@ -60,7 +61,7 @@
             title: "Ritual of the Full Spring"
             subtitle: "Perform a Ritual — Blood Magic rituals reshape the world with LP."
             tasks: [{ id: "3004000000000041" type: "item" item: "bloodmagic:ritual_diviner" }]
-            rewards: [{ id: "3004000000000042" type: "xp_levels" xp_levels: 6 }]
+            rewards: [{ id: "3004000000000042" type: "xp" xp: 200 }]
             x: 4.0d  y: 2.0d
         }
     ]

@@ -1,1 +1,99 @@
-{ default_hide_dependency_lines: false default_quest_shape: "" filename: "epic_fight" group: "1000000000000004" icon: "epicfight:steel_sword" id: "5002000000000001" order_index: 1 quest_links: [] quests: [ { id: "5002000000000002" shape: "hexagon" size: 1.5d title: "Epic Fight Awakening" subtitle: "Welcome to Epic Fight — full combat overhaul with dodge, combo and guard." tasks: [{ id: "5002000000000003" type: "checkmark" }] rewards: [{ id: "5002000000000004" type: "xp_levels" xp_levels: 3 }] x: 0.0d y: 0.0d } { dependencies: ["5002000000000002"] id: "5002000000000010" title: "Weapon Skills" subtitle: "Unlock weapon-specific combos and animations." tasks: [{ id: "5002000000000011" type: "item" item: "epicfight:steel_sword" }] rewards: [{ id: "5002000000000012" type: "xp_levels" xp_levels: 4 }] x: 2.0d y: 0.0d } { dependencies: ["5002000000000010"] id: "5002000000000020" title: "EFN Moves" subtitle: "Use Epic Fight Network — Judgment Cut, Excalibur and summoned swords." tasks: [{ id: "5002000000000021" type: "checkmark" }] rewards: [{ id: "5002000000000022" type: "xp_levels" xp_levels: 6 }] x: 4.0d y: 0.0d } { dependencies: ["5002000000000010"] id: "5002000000000030" title: "Avalon Arts" subtitle: "Master Epic Fight Avalon — Arthurian legendary techniques." tasks: [{ id: "5002000000000031" type: "checkmark" }] rewards: [{ id: "5002000000000032" type: "xp_levels" xp_levels: 6 }] x: 4.0d y: 2.0d } { dependencies: ["5002000000000010"] id: "5002000000000040" title: "EpicSkills" subtitle: "Assign skill points to Strength, Dexterity and Magic." tasks: [{ id: "5002000000000041" type: "checkmark" }] rewards: [{ id: "5002000000000042" type: "xp_levels" xp_levels: 5 }] x: 2.0d y: 2.0d } { dependencies: ["5002000000000010"] id: "5002000000000050" title: "Puffish Skills" subtitle: "Use Puffish Skills and Attributes to customise passive stats." tasks: [{ id: "5002000000000051" type: "checkmark" }] rewards: [{ id: "5002000000000052" type: "xp_levels" xp_levels: 5 }] x: 2.0d y: -2.0d } { dependencies: ["5002000000000002"] id: "5002000000000060" title: "Choose Your Origin" subtitle: "Select an Origin — Human, Merling, Phantom and more." tasks: [{ id: "5002000000000061" type: "checkmark" }] rewards: [{ id: "5002000000000062" type: "xp_levels" xp_levels: 5 } { id: "5002000000000063" type: "item" item: { id: "origins:orb_of_origin" count: 1 } }] x: 0.0d y: -2.0d } { dependencies: ["5002000000000060"] id: "5002000000000070" title: "Witch Origin" subtitle: "Play as a Witch via WitchOrigins — brew potions passively and curse on hit." tasks: [{ id: "5002000000000071" type: "checkmark" }] rewards: [{ id: "5002000000000072" type: "xp_levels" xp_levels: 5 }] x: 2.0d y: -4.0d } { dependencies: ["5002000000000060"] id: "5002000000000080" title: "Alignment System" subtitle: "Shift your Alignment — Good, Neutral or Evil unlocks different perks." tasks: [{ id: "5002000000000081" type: "checkmark" }] rewards: [{ id: "5002000000000082" type: "xp_levels" xp_levels: 4 }] x: 0.0d y: -4.0d } ] title: "&e\uD83D\uDDE1 Epic Fight & Skills" }
+{
+    default_hide_dependency_lines: false
+    default_quest_shape: ""
+    filename: "epic_fight"
+    group: "1000000000000004"
+    icon: "epicfight:steel_sword"
+    id: "5002000000000001"
+    images: []
+    order_index: 1
+    quest_links: []
+    quests: [
+        {
+            id: "5002000000000002"
+            shape: "hexagon"
+            size: 1.5d
+            title: "Epic Fight Awakening"
+            subtitle: "Welcome to Epic Fight — full combat overhaul with dodge, combo and guard."
+            tasks: [{ id: "5002000000000003" type: "checkmark" }]
+            rewards: [{ id: "5002000000000004" type: "xp" xp: 100 }]
+            x: 0.0d  y: 0.0d
+        }
+        {
+            dependencies: ["5002000000000002"]
+            id: "5002000000000010"
+            title: "Weapon Skills"
+            subtitle: "Unlock weapon-specific combos and animations."
+            tasks: [{ id: "5002000000000011" type: "item" item: "epicfight:steel_sword" }]
+            rewards: [{ id: "5002000000000012" type: "xp" xp: 125 }]
+            x: 2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["5002000000000010"]
+            id: "5002000000000020"
+            title: "EFN Moves"
+            subtitle: "Use Epic Fight Network — Judgment Cut, Excalibur and summoned swords."
+            tasks: [{ id: "5002000000000021" type: "checkmark" }]
+            rewards: [{ id: "5002000000000022" type: "xp" xp: 200 }]
+            x: 4.0d  y: 0.0d
+        }
+        {
+            dependencies: ["5002000000000010"]
+            id: "5002000000000030"
+            title: "Avalon Arts"
+            subtitle: "Master Epic Fight Avalon — Arthurian legendary techniques."
+            tasks: [{ id: "5002000000000031" type: "checkmark" }]
+            rewards: [{ id: "5002000000000032" type: "xp" xp: 200 }]
+            x: 4.0d  y: 2.0d
+        }
+        {
+            dependencies: ["5002000000000010"]
+            id: "5002000000000040"
+            title: "EpicSkills"
+            subtitle: "Assign skill points to Strength, Dexterity and Magic."
+            tasks: [{ id: "5002000000000041" type: "checkmark" }]
+            rewards: [{ id: "5002000000000042" type: "xp" xp: 150 }]
+            x: 2.0d  y: 2.0d
+        }
+        {
+            dependencies: ["5002000000000010"]
+            id: "5002000000000050"
+            title: "Puffish Skills"
+            subtitle: "Use Puffish Skills and Attributes to customise passive stats."
+            tasks: [{ id: "5002000000000051" type: "checkmark" }]
+            rewards: [{ id: "5002000000000052" type: "xp" xp: 150 }]
+            x: 2.0d  y: -2.0d
+        }
+        {
+            dependencies: ["5002000000000002"]
+            id: "5002000000000060"
+            title: "Choose Your Origin"
+            subtitle: "Select an Origin — Human, Merling, Phantom and more."
+            tasks: [{ id: "5002000000000061" type: "checkmark" }]
+            rewards: [
+                { id: "5002000000000062" type: "xp" xp: 150 }
+                { id: "5002000000000063" type: "item" item: { Count: 1 id: "origins:orb_of_origin" tag: { Damage: 0 } } }
+            ]
+            x: 0.0d  y: -2.0d
+        }
+        {
+            dependencies: ["5002000000000060"]
+            id: "5002000000000070"
+            title: "Witch Origin"
+            subtitle: "Play as a Witch via WitchOrigins — brew potions passively and curse on hit."
+            tasks: [{ id: "5002000000000071" type: "checkmark" }]
+            rewards: [{ id: "5002000000000072" type: "xp" xp: 150 }]
+            x: 2.0d  y: -4.0d
+        }
+        {
+            dependencies: ["5002000000000060"]
+            id: "5002000000000080"
+            title: "Alignment System"
+            subtitle: "Shift your Alignment — Good, Neutral or Evil unlocks different perks."
+            tasks: [{ id: "5002000000000081" type: "checkmark" }]
+            rewards: [{ id: "5002000000000082" type: "xp" xp: 125 }]
+            x: 0.0d  y: -4.0d
+        }
+    ]
+    title: "&e\uD83D\uDDE1 Epic Fight & Skills"
+}
