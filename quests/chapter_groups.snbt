@@ -1,0 +1,29 @@
+{
+	groups: [
+		{
+			id: "1000000000000001"
+			order_index: 0
+			title: "&6\u2699 Technology"
+		}
+		{
+			id: "1000000000000002"
+			order_index: 1
+			title: "&5\u2728 Magic & Spellcraft"
+		}
+		{
+			id: "1000000000000003"
+			order_index: 2
+			title: "&2\uD83C\uDF0D Exploration & World"
+		}
+		{
+			id: "1000000000000004"
+			order_index: 3
+			title: "&c\u2694 Weapons & Combat"
+		}
+		{
+			id: "1000000000000005"
+			order_index: 4
+			title: "&4\u2620 Bosses & Challenges"
+		}
+	]
+}
