@@ -1,0 +1,113 @@
+{
+    default_hide_dependency_lines: false
+    default_quest_shape: ""
+    filename: "applied_energistics"
+    group: "1000000000000001"
+    icon: "ae2:energy_cell"
+    id: "2001000000000001"
+    order_index: 2
+    quest_links: []
+    quests: [
+        {
+            id: "2001000000000002"
+            shape: "hexagon"
+            size: 1.5d
+            title: "First Certus Quartz"
+            subtitle: "Mine Certus Quartz — the backbone of every AE2 network."
+            tasks: [{ id: "2001000000000003" type: "item" item: "ae2:certus_quartz_crystal" count: 4 }]
+            rewards: [
+                { id: "2001000000000004" type: "item" item: { id: "ae2:quartz_fiber" count: 4 } }
+                { id: "2001000000000005" type: "xp_levels" xp_levels: 2 }
+            ]
+            x: 0.0d  y: 0.0d
+        }
+        {
+            dependencies: ["2001000000000002"]
+            id: "2001000000000010"
+            title: "Charged Certus"
+            subtitle: "Charge Certus Quartz in a Charger."
+            tasks: [{ id: "2001000000000011" type: "item" item: "ae2:charged_certus_quartz_crystal" count: 2 }]
+            rewards: [{ id: "2001000000000012" type: "xp_levels" xp_levels: 2 }]
+            x: 2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["2001000000000010"]
+            id: "2001000000000020"
+            title: "Meteorite Compass"
+            subtitle: "Craft a Meteorite Compass and locate a Sky Stone Meteorite."
+            tasks: [{ id: "2001000000000021" type: "item" item: "ae2:meteorite_compass" }]
+            rewards: [
+                { id: "2001000000000022" type: "item" item: { id: "ae2:sky_stone_block" count: 16 } }
+                { id: "2001000000000023" type: "xp_levels" xp_levels: 3 }
+            ]
+            x: 4.0d  y: 0.0d
+        }
+        {
+            dependencies: ["2001000000000020"]
+            id: "2001000000000030"
+            title: "ME Controller"
+            subtitle: "Place your first ME Controller — the heart of every AE2 network."
+            tasks: [{ id: "2001000000000031" type: "item" item: "ae2:controller" }]
+            rewards: [
+                { id: "2001000000000032" type: "item" item: { id: "ae2:1k_storage_cell" count: 2 } }
+                { id: "2001000000000033" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 6.0d  y: 0.0d
+        }
+        {
+            dependencies: ["2001000000000030"]
+            id: "2001000000000040"
+            title: "ME Drive & Storage"
+            subtitle: "Set up an ME Drive with storage cells."
+            tasks: [{ id: "2001000000000041" type: "item" item: "ae2:drive" }]
+            rewards: [
+                { id: "2001000000000042" type: "item" item: { id: "ae2:4k_storage_cell" count: 2 } }
+                { id: "2001000000000043" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 6.0d  y: 2.0d
+        }
+        {
+            dependencies: ["2001000000000030"]
+            id: "2001000000000050"
+            title: "ME Terminal"
+            subtitle: "Connect an ME Terminal to access your network inventory."
+            tasks: [{ id: "2001000000000051" type: "item" item: "ae2:terminal" }]
+            rewards: [{ id: "2001000000000052" type: "xp_levels" xp_levels: 4 }]
+            x: 6.0d  y: -2.0d
+        }
+        {
+            dependencies: ["2001000000000040"]
+            id: "2001000000000060"
+            title: "Autocrafting"
+            subtitle: "Set up an ME Crafting Terminal with a Crafting CPU."
+            tasks: [{ id: "2001000000000061" type: "item" item: "ae2:crafting_terminal" }]
+            rewards: [
+                { id: "2001000000000062" type: "item" item: { id: "ae2:16k_storage_cell" count: 1 } }
+                { id: "2001000000000063" type: "xp_levels" xp_levels: 8 }
+            ]
+            x: 8.0d  y: 2.0d
+        }
+        {
+            dependencies: ["2001000000000060"]
+            id: "2001000000000070"
+            title: "MEGACells"
+            subtitle: "Craft a MEGA Storage Cell from the MEGACells addon for massive item storage."
+            tasks: [{ id: "2001000000000071" type: "item" item: "megacells:mega_item_cell_1m" }]
+            rewards: [
+                { id: "2001000000000072" type: "item" item: { id: "megacells:mega_item_cell_4m" count: 1 } }
+                { id: "2001000000000073" type: "xp_levels" xp_levels: 10 }
+            ]
+            x: 10.0d  y: 2.0d
+        }
+        {
+            dependencies: ["2001000000000060"]
+            id: "2001000000000080"
+            title: "AppFlux Energy"
+            subtitle: "Use AppFlux to power your AE2 network with FE energy cells."
+            tasks: [{ id: "2001000000000081" type: "item" item: "appflux:fe_1k_cell" }]
+            rewards: [{ id: "2001000000000082" type: "xp_levels" xp_levels: 6 }]
+            x: 8.0d  y: 0.0d
+        }
+    ]
+    title: "&bAE2 — Applied Energistics"
+}

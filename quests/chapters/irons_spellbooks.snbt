@@ -1,0 +1,184 @@
+{
+    default_hide_dependency_lines: false
+    default_quest_shape: ""
+    filename: "irons_spellbooks"
+    group: "1000000000000002"
+    icon: "ironsspellbooks:apprentice_spell_book"
+    id: "3001000000000001"
+    order_index: 0
+    quest_links: []
+    quests: [
+        {
+            id: "3001000000000002"
+            shape: "hexagon"
+            size: 2.0d
+            title: "The Path of the Mage"
+            subtitle: "Obtain your first Spell Book — the foundation of all magic in Era of Black Death."
+            tasks: [{ id: "3001000000000003" type: "item" item: "ironsspellbooks:apprentice_spell_book" }]
+            rewards: [
+                { id: "3001000000000004" type: "item" item: { id: "ironsspellbooks:fireball" count: 1 } }
+                { id: "3001000000000005" type: "xp_levels" xp_levels: 3 }
+            ]
+            x: 0.0d  y: 0.0d
+        }
+        {
+            dependencies: ["3001000000000002"]
+            id: "3001000000000010"
+            title: "Mana Basics"
+            subtitle: "Equip mage armor and feel your mana pool expand. Mana regenerates over time."
+            tasks: [{ id: "3001000000000011" type: "item" item: "ironsspellbooks:mage_armor_boots" }]
+            rewards: [
+                { id: "3001000000000012" type: "item" item: { id: "ironsspellbooks:mage_armor_helmet" count: 1 } }
+                { id: "3001000000000013" type: "xp_levels" xp_levels: 3 }
+            ]
+            x: 2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["3001000000000010"]
+            id: "3001000000000020"
+            title: "Fire School"
+            subtitle: "Master Fire spells — Fireball, Fire Breath and Firebolt. Unlock the Pyromancer armor."
+            tasks: [{ id: "3001000000000021" type: "item" item: "ironsspellbooks:fireball" }]
+            rewards: [
+                { id: "3001000000000022" type: "item" item: { id: "ironsspellbooks:fire_upgrade_orb" count: 2 } }
+                { id: "3001000000000023" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 4.0d  y: -4.0d
+        }
+        {
+            dependencies: ["3001000000000010"]
+            id: "3001000000000030"
+            title: "Ice School"
+            subtitle: "Master Ice spells — Ray of Frost, Cone of Cold, Ice Spike. Unlock the Cryomancer armor."
+            tasks: [{ id: "3001000000000031" type: "item" item: "ironsspellbooks:cone_of_cold" }]
+            rewards: [
+                { id: "3001000000000032" type: "item" item: { id: "ironsspellbooks:ice_upgrade_orb" count: 2 } }
+                { id: "3001000000000033" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 4.0d  y: -2.0d
+        }
+        {
+            dependencies: ["3001000000000010"]
+            id: "3001000000000040"
+            title: "Lightning School"
+            subtitle: "Master Lightning spells — Lightning Lance, Ball Lightning, Chain Lightning."
+            tasks: [{ id: "3001000000000041" type: "item" item: "ironsspellbooks:lightning_lance" }]
+            rewards: [
+                { id: "3001000000000042" type: "item" item: { id: "ironsspellbooks:lightning_upgrade_orb" count: 2 } }
+                { id: "3001000000000043" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 4.0d  y: 0.0d
+        }
+        {
+            dependencies: ["3001000000000010"]
+            id: "3001000000000050"
+            title: "Holy School"
+            subtitle: "Master Holy spells — Guiding Bolt, Healing, Divine Smite. Unlock the Priest armor."
+            tasks: [{ id: "3001000000000051" type: "item" item: "ironsspellbooks:guiding_bolt" }]
+            rewards: [
+                { id: "3001000000000052" type: "item" item: { id: "ironsspellbooks:holy_upgrade_orb" count: 2 } }
+                { id: "3001000000000053" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 4.0d  y: 2.0d
+        }
+        {
+            dependencies: ["3001000000000010"]
+            id: "3001000000000060"
+            title: "Blood School"
+            subtitle: "Master Blood spells — Blood Slash, Blood Needle, Devour. Use HP to cast."
+            tasks: [{ id: "3001000000000061" type: "item" item: "ironsspellbooks:blood_slash" }]
+            rewards: [
+                { id: "3001000000000062" type: "item" item: { id: "ironsspellbooks:blood_upgrade_orb" count: 2 } }
+                { id: "3001000000000063" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 4.0d  y: 4.0d
+        }
+        {
+            dependencies: ["3001000000000010"]
+            id: "3001000000000070"
+            title: "Ender School"
+            subtitle: "Master Ender spells — Teleport, Void Tentacle, Eldritch Blast."
+            tasks: [{ id: "3001000000000071" type: "item" item: "ironsspellbooks:eldritch_blast" }]
+            rewards: [
+                { id: "3001000000000072" type: "item" item: { id: "ironsspellbooks:ender_upgrade_orb" count: 2 } }
+                { id: "3001000000000073" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 4.0d  y: 6.0d
+        }
+        {
+            dependencies: ["3001000000000010"]
+            id: "3001000000000080"
+            title: "Evocation School"
+            subtitle: "Master Evocation spells — Magic Missile, Spectral Hammer, Arrow Volley."
+            tasks: [{ id: "3001000000000081" type: "item" item: "ironsspellbooks:magic_missile" }]
+            rewards: [
+                { id: "3001000000000082" type: "item" item: { id: "ironsspellbooks:evocation_upgrade_orb" count: 2 } }
+                { id: "3001000000000083" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 4.0d  y: -6.0d
+        }
+        {
+            dependencies: ["3001000000000020" "3001000000000030" "3001000000000040"]
+            id: "3001000000000090"
+            title: "Arcane Ingot"
+            subtitle: "Craft an Arcane Ingot — required for mid-tier spell gear and focus items."
+            tasks: [{ id: "3001000000000091" type: "item" item: "ironsspellbooks:arcane_ingot" count: 4 }]
+            rewards: [
+                { id: "3001000000000092" type: "item" item: { id: "ironsspellbooks:arcane_ingot" count: 8 } }
+                { id: "3001000000000093" type: "xp_levels" xp_levels: 8 }
+            ]
+            x: 7.0d  y: -2.0d
+        }
+        {
+            dependencies: ["3001000000000090"]
+            id: "3001000000000100"
+            title: "Netherite Spell Book"
+            subtitle: "Upgrade to a Netherite Spell Book for higher spell levels and more spell slots."
+            tasks: [{ id: "3001000000000101" type: "item" item: "ironsspellbooks:netherite_spell_book" }]
+            rewards: [
+                { id: "3001000000000102" type: "item" item: { id: "ironsspellbooks:arcane_ingot" count: 16 } }
+                { id: "3001000000000103" type: "xp_levels" xp_levels: 10 }
+            ]
+            x: 9.0d  y: -2.0d
+        }
+        {
+            dependencies: ["3001000000000090"]
+            id: "3001000000000110"
+            title: "Spell Focus"
+            subtitle: "Craft a Spell Focus — boosts spell damage and reduces mana cost for a school."
+            tasks: [{ id: "3001000000000111" type: "item" item: "ironsspellbooks:fire_focus" }]
+            rewards: [
+                { id: "3001000000000112" type: "item" item: { id: "ironsspellbooks:ice_focus" count: 1 } }
+                { id: "3001000000000113" type: "xp_levels" xp_levels: 6 }
+            ]
+            x: 7.0d  y: 0.0d
+        }
+        {
+            dependencies: ["3001000000000100"]
+            id: "3001000000000120"
+            title: "Dead King's Citadel"
+            subtitle: "Find the Dead King's Citadel — an ancient undead fortress filled with Archevokers and the Dead King boss."
+            tasks: [{ id: "3001000000000121" type: "item" item: "ironsspellbooks:dead_king_soul_crystal" }]
+            rewards: [
+                { id: "3001000000000122" type: "item" item: { id: "ironsspellbooks:cinder_essence" count: 4 } }
+                { id: "3001000000000123" type: "xp_levels" xp_levels: 15 }
+            ]
+            x: 11.0d  y: -2.0d
+        }
+        {
+            dependencies: ["3001000000000120"]
+            id: "3001000000000130"
+            title: "Dragon Skin Spell Book"
+            subtitle: "The pinnacle — craft the Dragon Skin Spell Book for maximum spell mastery."
+            shape: "gear"
+            size: 2.0d
+            tasks: [{ id: "3001000000000131" type: "item" item: "ironsspellbooks:legendary_spell_book" }]
+            rewards: [
+                { id: "3001000000000132" type: "item" item: { id: "ironsspellbooks:legendary_spell_book" count: 1 } }
+                { id: "3001000000000133" type: "xp_levels" xp_levels: 30 }
+            ]
+            x: 13.0d  y: -2.0d
+        }
+    ]
+    title: "&5\u2728 Iron's Spellbooks"
+}

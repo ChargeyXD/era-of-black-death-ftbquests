@@ -1,0 +1,122 @@
+{
+    default_hide_dependency_lines: false
+    default_quest_shape: ""
+    filename: "create_and_addons"
+    group: "1000000000000001"
+    icon: "create:andesite_alloy"
+    id: "1001000000000001"
+    order_index: 0
+    quest_links: []
+    quests: [
+        {
+            id: "1001000000000002"
+            shape: "hexagon"
+            size: 1.5d
+            title: "First Rotation"
+            subtitle: "Place a Cogwheel and connect a Water Wheel to generate rotational force."
+            tasks: [{ id: "1001000000000003" type: "item" item: "create:cogwheel" }]
+            rewards: [
+                { id: "1001000000000004" type: "item" item: { id: "create:andesite_alloy" count: 8 } }
+                { id: "1001000000000005" type: "xp_levels" xp_levels: 2 }
+            ]
+            x: 0.0d  y: 0.0d
+        }
+        {
+            dependencies: ["1001000000000002"]
+            id: "1001000000000010"
+            title: "Mechanical Press"
+            subtitle: "Build a Mechanical Press — used to compress ingots, pack items and create sheets."
+            tasks: [{ id: "1001000000000011" type: "item" item: "create:mechanical_press" }]
+            rewards: [
+                { id: "1001000000000012" type: "item" item: { id: "create:iron_sheet" count: 8 } }
+                { id: "1001000000000013" type: "xp_levels" xp_levels: 3 }
+            ]
+            x: 2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["1001000000000010"]
+            id: "1001000000000020"
+            title: "Mechanical Mixer"
+            subtitle: "Craft a Mechanical Mixer for fluid-based alloying and cooking."
+            tasks: [{ id: "1001000000000021" type: "item" item: "create:mechanical_mixer" }]
+            rewards: [
+                { id: "1001000000000022" type: "item" item: { id: "create:brass_ingot" count: 8 } }
+                { id: "1001000000000023" type: "xp_levels" xp_levels: 3 }
+            ]
+            x: 4.0d  y: 0.0d
+        }
+        {
+            dependencies: ["1001000000000020"]
+            id: "1001000000000030"
+            title: "Brass Automation"
+            subtitle: "Craft a Brass Hand — required for advanced logistics and filtering."
+            tasks: [{ id: "1001000000000031" type: "item" item: "create:brass_hand" }]
+            rewards: [
+                { id: "1001000000000032" type: "item" item: { id: "create:precision_mechanism" count: 2 } }
+                { id: "1001000000000033" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 6.0d  y: 0.0d
+        }
+        {
+            dependencies: ["1001000000000030"]
+            id: "1001000000000040"
+            title: "Steam Engine"
+            subtitle: "Build a Steam Engine — scale your power production massively."
+            tasks: [{ id: "1001000000000041" type: "item" item: "create:steam_engine" }]
+            rewards: [
+                { id: "1001000000000042" type: "item" item: { id: "create:electron_tube" count: 4 } }
+                { id: "1001000000000043" type: "xp_levels" xp_levels: 6 }
+            ]
+            x: 8.0d  y: 0.0d
+        }
+        {
+            dependencies: ["1001000000000030"]
+            id: "1001000000000050"
+            title: "Big Cannons"
+            subtitle: "Build a Create Big Cannons cannon — devastating artillery for base defence."
+            tasks: [{ id: "1001000000000051" type: "item" item: "createbigcannons:cannon_barrel" }]
+            rewards: [
+                { id: "1001000000000052" type: "item" item: { id: "createbigcannons:shot" count: 16 } }
+                { id: "1001000000000053" type: "xp_levels" xp_levels: 8 }
+            ]
+            x: 8.0d  y: 2.0d
+        }
+        {
+            dependencies: ["1001000000000030"]
+            id: "1001000000000060"
+            title: "Create Crafts & Additions"
+            subtitle: "Generate FE electricity from Create rotation using Crafts & Additions."
+            tasks: [{ id: "1001000000000061" type: "item" item: "createaddition:alternator" }]
+            rewards: [
+                { id: "1001000000000062" type: "item" item: { id: "createaddition:electric_motor" count: 1 } }
+                { id: "1001000000000063" type: "xp_levels" xp_levels: 6 }
+            ]
+            x: 8.0d  y: -2.0d
+        }
+        {
+            dependencies: ["1001000000000040"]
+            id: "1001000000000070"
+            title: "Create Railways"
+            subtitle: "Build a Create Railways locomotive — travel across your world in style."
+            tasks: [{ id: "1001000000000071" type: "item" item: "railways:steam_locomotive" }]
+            rewards: [
+                { id: "1001000000000072" type: "item" item: { id: "railways:conductor_cap" count: 1 } }
+                { id: "1001000000000073" type: "xp_levels" xp_levels: 8 }
+            ]
+            x: 10.0d  y: 0.0d
+        }
+        {
+            dependencies: ["1001000000000040"]
+            id: "1001000000000080"
+            title: "Create: The Factory Must Grow"
+            subtitle: "Use TFMG for industrial steel production and factory-grade logistics."
+            tasks: [{ id: "1001000000000081" type: "item" item: "tfmg:steel_ingot" }]
+            rewards: [
+                { id: "1001000000000082" type: "item" item: { id: "tfmg:steel_block" count: 4 } }
+                { id: "1001000000000083" type: "xp_levels" xp_levels: 6 }
+            ]
+            x: 10.0d  y: 2.0d
+        }
+    ]
+    title: "&6\u2699 Create & Addons"
+}

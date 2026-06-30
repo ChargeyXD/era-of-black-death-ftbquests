@@ -1,0 +1,89 @@
+{
+    default_hide_dependency_lines: false
+    default_quest_shape: ""
+    filename: "ars_nouveau"
+    group: "1000000000000002"
+    icon: "ars_nouveau:apprentice_spellbook"
+    id: "3003000000000001"
+    order_index: 2
+    quest_links: []
+    quests: [
+        {
+            id: "3003000000000002"
+            shape: "hexagon"
+            size: 1.5d
+            title: "First Spell"
+            subtitle: "Craft an Apprentice Spellbook from Ars Nouveau."
+            tasks: [{ id: "3003000000000003" type: "item" item: "ars_nouveau:apprentice_spellbook" }]
+            rewards: [
+                { id: "3003000000000004" type: "item" item: { id: "ars_nouveau:blank_glyph" count: 4 } }
+                { id: "3003000000000005" type: "xp_levels" xp_levels: 3 }
+            ]
+            x: 0.0d  y: 0.0d
+        }
+        {
+            dependencies: ["3003000000000002"]
+            id: "3003000000000010"
+            title: "Source Jar"
+            subtitle: "Fill a Source Jar — Source powers all Ars Nouveau magic."
+            tasks: [{ id: "3003000000000011" type: "item" item: "ars_nouveau:source_jar" }]
+            rewards: [{ id: "3003000000000012" type: "xp_levels" xp_levels: 3 }]
+            x: 2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["3003000000000010"]
+            id: "3003000000000020"
+            title: "Imbuement Chamber"
+            subtitle: "Craft an Imbuement Chamber to imbue items with magical properties."
+            tasks: [{ id: "3003000000000021" type: "item" item: "ars_nouveau:imbuement_chamber" }]
+            rewards: [
+                { id: "3003000000000022" type: "item" item: { id: "ars_nouveau:abjuration_essence" count: 4 } }
+                { id: "3003000000000023" type: "xp_levels" xp_levels: 4 }
+            ]
+            x: 4.0d  y: 0.0d
+        }
+        {
+            dependencies: ["3003000000000020"]
+            id: "3003000000000030"
+            title: "Archmage Spellbook"
+            subtitle: "Upgrade to the Archmage Spellbook for maximum spell complexity."
+            tasks: [{ id: "3003000000000031" type: "item" item: "ars_nouveau:archmage_spellbook" }]
+            rewards: [
+                { id: "3003000000000032" type: "item" item: { id: "ars_nouveau:source_gem" count: 16 } }
+                { id: "3003000000000033" type: "xp_levels" xp_levels: 8 }
+            ]
+            x: 6.0d  y: 0.0d
+        }
+        {
+            dependencies: ["3003000000000020"]
+            id: "3003000000000040"
+            title: "Summon a Familiar"
+            subtitle: "Summon a Familiar — Starbuncle, Drygmy, Whirlisprig or Wixie."
+            tasks: [{ id: "3003000000000041" type: "item" item: "ars_nouveau:drygmy_charm" }]
+            rewards: [{ id: "3003000000000042" type: "xp_levels" xp_levels: 5 }]
+            x: 4.0d  y: 2.0d
+        }
+        {
+            dependencies: ["3003000000000020"]
+            id: "3003000000000050"
+            title: "Ars Elemental"
+            subtitle: "Unlock Ars Elemental — new spell schools of Air, Earth, Fire and Water."
+            tasks: [{ id: "3003000000000051" type: "item" item: "arselementals:fire_focus" }]
+            rewards: [
+                { id: "3003000000000052" type: "item" item: { id: "arselementals:earth_focus" count: 1 } }
+                { id: "3003000000000053" type: "xp_levels" xp_levels: 6 }
+            ]
+            x: 4.0d  y: -2.0d
+        }
+        {
+            dependencies: ["3003000000000020"]
+            id: "3003000000000060"
+            title: "Ars Additions"
+            subtitle: "Use Ars Additions — warp scrolls, new charms and extended rituals."
+            tasks: [{ id: "3003000000000061" type: "item" item: "arsadditions:warp_index" }]
+            rewards: [{ id: "3003000000000062" type: "xp_levels" xp_levels: 5 }]
+            x: 2.0d  y: 2.0d
+        }
+    ]
+    title: "&dArs Nouveau"
+}

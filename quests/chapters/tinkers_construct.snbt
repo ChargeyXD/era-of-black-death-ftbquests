@@ -1,0 +1,74 @@
+{
+    default_hide_dependency_lines: false
+    default_quest_shape: ""
+    filename: "tinkers_construct"
+    group: "1000000000000001"
+    icon: "tconstruct:mattock"
+    id: "1003000000000001"
+    order_index: 2
+    quest_links: []
+    quests: [
+        {
+            id: "1003000000000002"
+            shape: "hexagon"
+            size: 1.5d
+            title: "Tinker's Station"
+            subtitle: "Build a Tinker's Station — the hub for crafting custom tools and weapons."
+            tasks: [{ id: "1003000000000003" type: "item" item: "tconstruct:tinker_station" }]
+            rewards: [
+                { id: "1003000000000004" type: "item" item: { id: "tconstruct:pattern" count: 4 } }
+                { id: "1003000000000005" type: "xp_levels" xp_levels: 3 }
+            ]
+            x: 0.0d  y: 0.0d
+        }
+        {
+            dependencies: ["1003000000000002"]
+            id: "1003000000000010"
+            title: "Smeltery"
+            subtitle: "Build a Smeltery to alloy metals and cast tool parts."
+            tasks: [{ id: "1003000000000011" type: "item" item: "tconstruct:smeltery_controller" }]
+            rewards: [
+                { id: "1003000000000012" type: "item" item: { id: "tconstruct:molten_iron_bucket" count: 1 } }
+                { id: "1003000000000013" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["1003000000000010"]
+            id: "1003000000000020"
+            title: "First Custom Tool"
+            subtitle: "Craft your first Tinkers tool — mix materials for unique stat combinations."
+            tasks: [{ id: "1003000000000021" type: "item" item: "tconstruct:broad_sword" }]
+            rewards: [
+                { id: "1003000000000022" type: "item" item: { id: "tconstruct:silky_cloth" count: 4 } }
+                { id: "1003000000000023" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 4.0d  y: 0.0d
+        }
+        {
+            dependencies: ["1003000000000020"]
+            id: "1003000000000030"
+            title: "Modifier Mastery"
+            subtitle: "Apply modifiers to your tool — Sharpness, Reinforced, and Silky expand your toolkit."
+            tasks: [{ id: "1003000000000031" type: "item" item: "tconstruct:reinforcement" }]
+            rewards: [
+                { id: "1003000000000032" type: "item" item: { id: "tconstruct:reinforcement" count: 4 } }
+                { id: "1003000000000033" type: "xp_levels" xp_levels: 6 }
+            ]
+            x: 6.0d  y: 0.0d
+        }
+        {
+            dependencies: ["1003000000000020"]
+            id: "1003000000000040"
+            title: "Slime Crystals"
+            subtitle: "Gather Slime Crystals for bouncy, magical Tinkers components."
+            tasks: [{ id: "1003000000000041" type: "item" item: "tconstruct:earth_slime_crystal" }]
+            rewards: [
+                { id: "1003000000000042" type: "item" item: { id: "tconstruct:sky_slime_crystal" count: 2 } }
+                { id: "1003000000000043" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 4.0d  y: 2.0d
+        }
+    ]
+    title: "&eTinkers' Construct"
+}

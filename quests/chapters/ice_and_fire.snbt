@@ -1,0 +1,101 @@
+{
+    default_hide_dependency_lines: false
+    default_quest_shape: ""
+    filename: "ice_and_fire"
+    group: "1000000000000003"
+    icon: "iceandfire:fire_dragon_scale"
+    id: "4002000000000001"
+    order_index: 1
+    quest_links: []
+    quests: [
+        {
+            id: "4002000000000002"
+            shape: "hexagon"
+            size: 1.5d
+            title: "Dragons Exist"
+            subtitle: "Find your first Ice and Fire Dragon — they roam freely in Era of Black Death."
+            tasks: [{ id: "4002000000000003" type: "item" item: "iceandfire:fire_dragon_scale" }]
+            rewards: [
+                { id: "4002000000000004" type: "item" item: { id: "iceandfire:dragon_bone" count: 4 } }
+                { id: "4002000000000005" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 0.0d  y: 0.0d
+        }
+        {
+            dependencies: ["4002000000000002"]
+            id: "4002000000000010"
+            title: "Dragon Steel"
+            subtitle: "Smelt Dragon Steel — the strongest overworld metal forged from Dragon Bones."
+            tasks: [{ id: "4002000000000011" type: "item" item: "iceandfire:dragonsteel_fire_ingot" }]
+            rewards: [
+                { id: "4002000000000012" type: "item" item: { id: "iceandfire:dragonsteel_fire_sword" count: 1 } }
+                { id: "4002000000000013" type: "xp_levels" xp_levels: 10 }
+            ]
+            x: 2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["4002000000000002"]
+            id: "4002000000000020"
+            title: "Tame a Dragon"
+            subtitle: "Find a Dragon Egg and hatch it — raise your own dragon from birth."
+            tasks: [{ id: "4002000000000021" type: "item" item: "iceandfire:fire_dragon_egg" }]
+            rewards: [
+                { id: "4002000000000022" type: "item" item: { id: "iceandfire:dragon_staff" count: 1 } }
+                { id: "4002000000000023" type: "xp_levels" xp_levels: 10 }
+            ]
+            x: 2.0d  y: 2.0d
+        }
+        {
+            dependencies: ["4002000000000002"]
+            id: "4002000000000030"
+            title: "Cyclops & Gorgon"
+            subtitle: "Slay a Cyclops and a Gorgon — don't look her in the eyes."
+            tasks: [
+                { id: "4002000000000031" type: "item" item: "iceandfire:cyclops_eye" }
+                { id: "4002000000000032" type: "item" item: "iceandfire:gorgon_head" }
+            ]
+            rewards: [
+                { id: "4002000000000033" type: "item" item: { id: "iceandfire:blindfold" count: 1 } }
+                { id: "4002000000000034" type: "xp_levels" xp_levels: 8 }
+            ]
+            x: 0.0d  y: 2.0d
+        }
+        {
+            dependencies: ["4002000000000002"]
+            id: "4002000000000040"
+            title: "Sea Serpent"
+            subtitle: "Kill a Sea Serpent — the terror of Ice and Fire's oceans."
+            tasks: [{ id: "4002000000000041" type: "item" item: "iceandfire:sea_serpent_scale" }]
+            rewards: [
+                { id: "4002000000000042" type: "item" item: { id: "iceandfire:sea_serpent_arrow" count: 16 } }
+                { id: "4002000000000043" type: "xp_levels" xp_levels: 8 }
+            ]
+            x: 0.0d  y: -2.0d
+        }
+        {
+            dependencies: ["4002000000000010"]
+            id: "4002000000000050"
+            title: "Dragon Bone Armor"
+            subtitle: "Craft a full set of Dragon Bone Armor for elite protection."
+            tasks: [{ id: "4002000000000051" type: "item" item: "iceandfire:dragonbone_helmet" }]
+            rewards: [
+                { id: "4002000000000052" type: "item" item: { id: "iceandfire:dragonbone_chestplate" count: 1 } }
+                { id: "4002000000000053" type: "xp_levels" xp_levels: 12 }
+            ]
+            x: 4.0d  y: 0.0d
+        }
+        {
+            dependencies: ["4002000000000002"]
+            id: "4002000000000060"
+            title: "Stymphalian Bird"
+            subtitle: "Hunt the Stymphalian Bird — it showers metallic feathers as projectiles."
+            tasks: [{ id: "4002000000000061" type: "item" item: "iceandfire:stymphalian_bird_feather" }]
+            rewards: [
+                { id: "4002000000000062" type: "item" item: { id: "iceandfire:stymphalian_bird_feather" count: 8 } }
+                { id: "4002000000000063" type: "xp_levels" xp_levels: 6 }
+            ]
+            x: 2.0d  y: -2.0d
+        }
+    ]
+    title: "&c\uD83D\uDC09 Ice and Fire"
+}

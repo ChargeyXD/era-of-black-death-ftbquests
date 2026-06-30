@@ -1,0 +1,98 @@
+{
+    default_hide_dependency_lines: false
+    default_quest_shape: ""
+    filename: "exploration_and_biomes"
+    group: "1000000000000003"
+    icon: "minecraft:compass"
+    id: "4001000000000001"
+    order_index: 0
+    quest_links: []
+    quests: [
+        {
+            id: "4001000000000002"
+            shape: "hexagon"
+            size: 1.5d
+            title: "A World Awaits"
+            subtitle: "Step into the wilderness — Era of Black Death has expanded the world significantly."
+            tasks: [{ id: "4001000000000003" type: "checkmark" }]
+            rewards: [
+                { id: "4001000000000004" type: "item" item: { id: "minecraft:map" count: 1 } }
+                { id: "4001000000000005" type: "xp_levels" xp_levels: 2 }
+            ]
+            x: 0.0d  y: 0.0d
+        }
+        {
+            dependencies: ["4001000000000002"]
+            id: "4001000000000010"
+            title: "Biomes We've Gone"
+            subtitle: "Discover a biome added by Biomes We've Gone."
+            tasks: [{ id: "4001000000000011" type: "item" item: "biomesweveGone:blue_forget_me_not" }]
+            rewards: [{ id: "4001000000000012" type: "xp_levels" xp_levels: 3 }]
+            x: 2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["4001000000000002"]
+            id: "4001000000000020"
+            title: "Oh The Biomes You'll Go"
+            subtitle: "Explore a biome from Oh The Biomes You'll Go."
+            tasks: [{ id: "4001000000000021" type: "item" item: "byg:bulbis_pod" }]
+            rewards: [{ id: "4001000000000022" type: "xp_levels" xp_levels: 3 }]
+            x: 2.0d  y: 2.0d
+        }
+        {
+            dependencies: ["4001000000000002"]
+            id: "4001000000000030"
+            title: "Alex's Mobs"
+            subtitle: "Encounter an Alex's Mobs creature — hundreds of new wildlife await."
+            tasks: [{ id: "4001000000000031" type: "item" item: "alexsmobs:animal_dictionary" }]
+            rewards: [{ id: "4001000000000032" type: "xp_levels" xp_levels: 3 }]
+            x: 2.0d  y: -2.0d
+        }
+        {
+            dependencies: ["4001000000000002"]
+            id: "4001000000000040"
+            title: "Alex's Caves"
+            subtitle: "Descend into Alex's Caves — discover terrifying underground ecosystems."
+            tasks: [{ id: "4001000000000041" type: "item" item: "alexscaves:ancient_helmet" }]
+            rewards: [
+                { id: "4001000000000042" type: "item" item: { id: "alexscaves:ancient_chestplate" count: 1 } }
+                { id: "4001000000000043" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 0.0d  y: 2.0d
+        }
+        {
+            dependencies: ["4001000000000002"]
+            id: "4001000000000050"
+            title: "Dungeons & Taverns"
+            subtitle: "Locate a Dungeon or Tavern — trade, rest and loot awaits inside."
+            tasks: [{ id: "4001000000000051" type: "item" item: "dungeons_and_taverns:tavern_key" }]
+            rewards: [
+                { id: "4001000000000052" type: "item" item: { id: "minecraft:emerald" count: 8 } }
+                { id: "4001000000000053" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 0.0d  y: -2.0d
+        }
+        {
+            dependencies: ["4001000000000002"]
+            id: "4001000000000060"
+            title: "YUNG's Better Structures"
+            subtitle: "Explore a YUNG's improved stronghold, dungeon or cave."
+            tasks: [{ id: "4001000000000061" type: "item" item: "yungs_better_strongholds:runed_stone" }]
+            rewards: [{ id: "4001000000000062" type: "xp_levels" xp_levels: 5 }]
+            x: -2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["4001000000000002"]
+            id: "4001000000000070"
+            title: "Deeper & Darker"
+            subtitle: "Descend into the Deep Dark and explore Deeper & Darker structures."
+            tasks: [{ id: "4001000000000071" type: "item" item: "deeperdarker:sculk_bone" }]
+            rewards: [
+                { id: "4001000000000072" type: "item" item: { id: "deeperdarker:warden_armor_trim_smithing_template" count: 1 } }
+                { id: "4001000000000073" type: "xp_levels" xp_levels: 8 }
+            ]
+            x: -2.0d  y: 2.0d
+        }
+    ]
+    title: "&2\uD83E\uDDED Exploration & Biomes"
+}

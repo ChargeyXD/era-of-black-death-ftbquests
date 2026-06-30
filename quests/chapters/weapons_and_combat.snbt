@@ -1,0 +1,146 @@
+{
+    default_hide_dependency_lines: false
+    default_quest_shape: ""
+    filename: "weapons_and_combat"
+    group: "1000000000000004"
+    icon: "simplyswords:greatsword"
+    id: "5001000000000001"
+    order_index: 0
+    quest_links: []
+    quests: [
+        {
+            id: "5001000000000002"
+            shape: "hexagon"
+            size: 1.5d
+            title: "Simply Swords"
+            subtitle: "Craft a Simply Swords weapon — Greatswords, Rapiers, Spears and more."
+            tasks: [{ id: "5001000000000003" type: "item" item: "simplyswords:greatsword" }]
+            rewards: [
+                { id: "5001000000000004" type: "item" item: { id: "simplyswords:longsword" count: 1 } }
+                { id: "5001000000000005" type: "xp_levels" xp_levels: 3 }
+            ]
+            x: 0.0d  y: 0.0d
+        }
+        {
+            dependencies: ["5001000000000002"]
+            id: "5001000000000010"
+            title: "Falchion Moveset"
+            subtitle: "Unlock Falchion Moveset — fluid combos that chain into devastating finishers."
+            tasks: [{ id: "5001000000000011" type: "item" item: "falchionmoveset:falchion" }]
+            rewards: [{ id: "5001000000000012" type: "xp_levels" xp_levels: 4 }]
+            x: 2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["5001000000000002"]
+            id: "5001000000000020"
+            title: "Simply Bows"
+            subtitle: "Craft a magical bow from Simply Bows — each fires unique arrow effects."
+            tasks: [{ id: "5001000000000021" type: "item" item: "simplybows:bubble_bow" }]
+            rewards: [
+                { id: "5001000000000022" type: "item" item: { id: "simplybows:homing_arrow" count: 16 } }
+                { id: "5001000000000023" type: "xp_levels" xp_levels: 4 }
+            ]
+            x: 0.0d  y: 2.0d
+        }
+        {
+            dependencies: ["5001000000000002"]
+            id: "5001000000000030"
+            title: "Peyro's Scythe"
+            subtitle: "Wield Peyro's Scythe — a cosmic weapon commanding black flame and holy lances."
+            tasks: [{ id: "5001000000000031" type: "item" item: "peyroscythe:made_in_heaven" }]
+            rewards: [
+                { id: "5001000000000032" type: "xp_levels" xp_levels: 10 }
+                { id: "5001000000000033" type: "item" item: { id: "ironsspellbooks:holy_upgrade_orb" count: 2 } }
+            ]
+            x: 2.0d  y: -2.0d
+        }
+        {
+            dependencies: ["5001000000000002"]
+            id: "5001000000000040"
+            title: "Fantasy Weapons"
+            subtitle: "Craft Fantasy Weapons — ornate swords and axes of mythological aesthetic."
+            tasks: [{ id: "5001000000000041" type: "item" item: "fantasy_weapons:mythril_sword" }]
+            rewards: [{ id: "5001000000000042" type: "xp_levels" xp_levels: 5 }]
+            x: 0.0d  y: -2.0d
+        }
+        {
+            dependencies: ["5001000000000002"]
+            id: "5001000000000050"
+            title: "Iron's Arms"
+            subtitle: "Craft Iron's Arms weapons — spellbook-infused melee with locked spell slots."
+            tasks: [{ id: "5001000000000051" type: "item" item: "ironsarms:claymore" }]
+            rewards: [
+                { id: "5001000000000052" type: "item" item: { id: "ironsarms:rapier" count: 1 } }
+                { id: "5001000000000053" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 2.0d  y: 2.0d
+        }
+        {
+            dependencies: ["5001000000000050"]
+            id: "5001000000000060"
+            title: "Apotheosis — Enchanting Mastery"
+            subtitle: "Use Apotheosis to push enchantments beyond vanilla limits."
+            tasks: [{ id: "5001000000000061" type: "item" item: "apotheosis:infusion_table" }]
+            rewards: [
+                { id: "5001000000000062" type: "item" item: { id: "apotheosis:boss_trophy" count: 1 } }
+                { id: "5001000000000063" type: "xp_levels" xp_levels: 6 }
+            ]
+            x: 4.0d  y: 2.0d
+        }
+        {
+            dependencies: ["5001000000000002"]
+            id: "5001000000000070"
+            title: "TACZ Firearms"
+            subtitle: "Obtain a TACZ firearm — craft ammo and prepare for modern warfare."
+            tasks: [{ id: "5001000000000071" type: "item" item: "tacz:pistol" }]
+            rewards: [
+                { id: "5001000000000072" type: "item" item: { id: "tacz:pistol_ammo" count: 32 } }
+                { id: "5001000000000073" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 0.0d  y: 4.0d
+        }
+        {
+            dependencies: ["5001000000000002"]
+            id: "5001000000000080"
+            title: "Fantasy Armor"
+            subtitle: "Equip Fantasy Armor — each set grants unique bonuses and spell container slots."
+            tasks: [{ id: "5001000000000081" type: "item" item: "fantasy_armor:mythril_chestplate" }]
+            rewards: [
+                { id: "5001000000000082" type: "xp_levels" xp_levels: 6 }
+                { id: "5001000000000083" type: "item" item: { id: "fantasy_armor:mythril_helmet" count: 1 } }
+            ]
+            x: 4.0d  y: -2.0d
+        }
+        {
+            dependencies: ["5001000000000080"]
+            id: "5001000000000090"
+            title: "Armor of the Ages"
+            subtitle: "Discover Armor of the Ages — era-themed armor from Bronze to beyond Netherite."
+            tasks: [{ id: "5001000000000091" type: "item" item: "armoroftheages:bronze_chestplate" }]
+            rewards: [{ id: "5001000000000092" type: "xp_levels" xp_levels: 6 }]
+            x: 6.0d  y: -2.0d
+        }
+        {
+            dependencies: ["5001000000000002"]
+            id: "5001000000000100"
+            title: "Relics Collection"
+            subtitle: "Find a Relic — powerful artifacts with unique passive and active abilities."
+            tasks: [{ id: "5001000000000101" type: "item" item: "relics:lucky_horseshoe" }]
+            rewards: [
+                { id: "5001000000000102" type: "item" item: { id: "relics:researching_table" count: 1 } }
+                { id: "5001000000000103" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: -2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["5001000000000002"]
+            id: "5001000000000110"
+            title: "Artifacts"
+            subtitle: "Collect Artifacts — trinkets that grant unique magical abilities when worn."
+            tasks: [{ id: "5001000000000111" type: "item" item: "artifacts:lucky_scarf" }]
+            rewards: [{ id: "5001000000000112" type: "xp_levels" xp_levels: 5 }]
+            x: -2.0d  y: 2.0d
+        }
+    ]
+    title: "&c\u2694 Weapons & Combat"
+}
