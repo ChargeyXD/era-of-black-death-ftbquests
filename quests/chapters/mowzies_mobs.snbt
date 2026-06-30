@@ -1,0 +1,185 @@
+{
+    default_hide_dependency_lines: false
+    default_quest_shape: ""
+    filename: "mowzies_mobs"
+    group: "1000000000000003"
+    icon: "mowziesmobs:sol_visage"
+    id: "4002000000000001"
+    order_index: 1
+    quest_links: []
+    quests: [
+        {
+            id: "4002000000000002"
+            shape: "hexagon"
+            size: 1.5d
+            title: "Legends of Mowzie"
+            subtitle: "Encounter the ancient creatures of Mowzie's Mobs — powerful bosses and rare wildlife lurk across the world."
+            tasks: [{ id: "4002000000000003" type: "checkmark" }]
+            rewards: [
+                { id: "4002000000000004" type: "item" item: { id: "mowziesmobs:dart" count: 8 } }
+                { id: "4002000000000005" type: "xp_levels" xp_levels: 2 }
+            ]
+            x: 0.0d  y: 0.0d
+        }
+        {
+            dependencies: ["4002000000000002"]
+            id: "4002000000000010"
+            title: "The Blowgun"
+            subtitle: "Craft a Blowgun and darts — a silent ranged weapon that can apply poisons and effects."
+            tasks: [{ id: "4002000000000011" type: "item" item: "mowziesmobs:blowgun" }]
+            rewards: [
+                { id: "4002000000000012" type: "item" item: { id: "mowziesmobs:dart" count: 16 } }
+                { id: "4002000000000013" type: "xp_levels" xp_levels: 3 }
+            ]
+            x: -2.0d  y: -2.0d
+        }
+        {
+            dependencies: ["4002000000000002"]
+            id: "4002000000000020"
+            title: "Naga Fang Dagger"
+            subtitle: "Slay a Naga and claim its fang — craft it into a deadly Naga Fang Dagger that poisons enemies."
+            tasks: [{ id: "4002000000000021" type: "item" item: "mowziesmobs:naga_fang" }]
+            rewards: [
+                { id: "4002000000000022" type: "item" item: { id: "mowziesmobs:naga_fang_dagger" count: 1 } }
+                { id: "4002000000000023" type: "xp_levels" xp_levels: 5 }
+            ]
+            x: 0.0d  y: -2.0d
+        }
+        {
+            dependencies: ["4002000000000002"]
+            id: "4002000000000030"
+            title: "The Spear"
+            subtitle: "Forge a Ferrous Wroughtnaut Spear — a two-handed melee weapon with great range and power."
+            tasks: [{ id: "4002000000000031" type: "item" item: "mowziesmobs:spear" }]
+            rewards: [
+                { id: "4002000000000032" type: "xp_levels" xp_levels: 4 }
+            ]
+            x: 2.0d  y: -2.0d
+        }
+        {
+            dependencies: ["4002000000000002"]
+            id: "4002000000000040"
+            title: "Wrought Axe"
+            subtitle: "Defeat the Ferrous Wroughtnaut to claim its mighty axe — one of the strongest early-game weapons."
+            tasks: [{ id: "4002000000000041" type: "item" item: "mowziesmobs:wrought_axe" }]
+            rewards: [
+                { id: "4002000000000042" type: "item" item: { id: "mowziesmobs:wrought_helmet" count: 1 } }
+                { id: "4002000000000043" type: "xp_levels" xp_levels: 6 }
+            ]
+            x: 2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["4002000000000040"]
+            id: "4002000000000050"
+            title: "Earthrend Gauntlet"
+            subtitle: "Defeat the Foliaath and claim the Earthrend Gauntlet — slam the ground to send shockwaves through enemies."
+            tasks: [{ id: "4002000000000051" type: "item" item: "mowziesmobs:earthrend_gauntlet" }]
+            rewards: [
+                { id: "4002000000000052" type: "xp_levels" xp_levels: 8 }
+            ]
+            x: 4.0d  y: 0.0d
+        }
+        {
+            dependencies: ["4002000000000040"]
+            id: "4002000000000060"
+            title: "Sculptor Staff"
+            subtitle: "Defeat the Sculptor and claim its Staff — fire seeking projectiles that track down enemies."
+            tasks: [{ id: "4002000000000061" type: "item" item: "mowziesmobs:sculptor_staff" }]
+            rewards: [
+                { id: "4002000000000062" type: "xp_levels" xp_levels: 8 }
+            ]
+            x: 4.0d  y: -2.0d
+        }
+        {
+            dependencies: ["4002000000000060"]
+            id: "4002000000000070"
+            title: "Sol Visage"
+            subtitle: "Defeat the Lantern — the ultimate Mowzie boss — and claim the Sol Visage, a living sun that obliterates foes."
+            tasks: [{ id: "4002000000000071" type: "item" item: "mowziesmobs:sol_visage" }]
+            rewards: [
+                { id: "4002000000000072" type: "item" item: { id: "mowziesmobs:glowing_jelly" count: 4 } }
+                { id: "4002000000000073" type: "xp_levels" xp_levels: 12 }
+            ]
+            x: 6.0d  y: -2.0d
+        }
+        {
+            dependencies: ["4002000000000020"]
+            id: "4002000000000080"
+            title: "Ice Crystal"
+            subtitle: "Slay the Frostmaw and collect the Ice Crystal — harness the power of the frozen tundra."
+            tasks: [{ id: "4002000000000081" type: "item" item: "mowziesmobs:ice_crystal" }]
+            rewards: [
+                { id: "4002000000000082" type: "xp_levels" xp_levels: 6 }
+            ]
+            x: 0.0d  y: -4.0d
+        }
+        {
+            dependencies: ["4002000000000002"]
+            id: "4002000000000090"
+            title: "Geomancer's Robes"
+            subtitle: "Defeat the Geomancer and don their sacred set — beads, belt, robe and sandals grant arcane earth power."
+            tasks: [{ id: "4002000000000091" type: "item" item: "mowziesmobs:geomancer_robe" }]
+            rewards: [
+                { id: "4002000000000092" type: "item" item: { id: "mowziesmobs:geomancer_beads" count: 1 } }
+                { id: "4002000000000093" type: "item" item: { id: "mowziesmobs:geomancer_belt" count: 1 } }
+                { id: "4002000000000094" type: "item" item: { id: "mowziesmobs:geomancer_sandals" count: 1 } }
+                { id: "4002000000000095" type: "xp_levels" xp_levels: 7 }
+            ]
+            x: -2.0d  y: 0.0d
+        }
+        {
+            dependencies: ["4002000000000090"]
+            id: "4002000000000100"
+            title: "Gong of the Umvuthana"
+            subtitle: "Obtain the Gong — summon and challenge the Umvuthana clan. Defeat them to claim their sacred masks."
+            tasks: [{ id: "4002000000000101" type: "item" item: "mowziesmobs:gong" }]
+            rewards: [
+                { id: "4002000000000102" type: "item" item: { id: "mowziesmobs:umvuthana_mask_bliss" count: 1 } }
+                { id: "4002000000000103" type: "xp_levels" xp_levels: 8 }
+            ]
+            x: -2.0d  y: 2.0d
+        }
+        {
+            dependencies: ["4002000000000100"]
+            id: "4002000000000110"
+            title: "Masks of the Umvuthana"
+            subtitle: "Collect all six Umvuthana masks — Bliss, Faith, Fear, Fury, Misery and Rage. Each channels a different spirit."
+            tasks: [
+                { id: "4002000000000111" type: "item" item: "mowziesmobs:umvuthana_mask_bliss" }
+                { id: "4002000000000112" type: "item" item: "mowziesmobs:umvuthana_mask_faith" }
+                { id: "4002000000000113" type: "item" item: "mowziesmobs:umvuthana_mask_fear" }
+                { id: "4002000000000114" type: "item" item: "mowziesmobs:umvuthana_mask_fury" }
+                { id: "4002000000000115" type: "item" item: "mowziesmobs:umvuthana_mask_misery" }
+                { id: "4002000000000116" type: "item" item: "mowziesmobs:umvuthana_mask_rage" }
+            ]
+            rewards: [
+                { id: "4002000000000117" type: "item" item: { id: "mowziesmobs:grants_uns_blessing" count: 1 } }
+                { id: "4002000000000118" type: "xp_levels" xp_levels: 15 }
+            ]
+            x: -2.0d  y: 4.0d
+        }
+        {
+            dependencies: ["4002000000000002"]
+            id: "4002000000000120"
+            title: "Elokosa Moon Phase"
+            subtitle: "Slay an Elokosa — a werewolf boss whose strength changes with the phase of the moon. Collect its Moon Paw."
+            tasks: [{ id: "4002000000000121" type: "item" item: "mowziesmobs:elokosa_paw_crescent" }]
+            rewards: [
+                { id: "4002000000000122" type: "xp_levels" xp_levels: 7 }
+            ]
+            x: 0.0d  y: 2.0d
+        }
+        {
+            dependencies: ["4002000000000120"]
+            id: "4002000000000130"
+            title: "Full Moon Hunt"
+            subtitle: "Defeat an Elokosa under the full moon — at peak power they are terrifyingly fast and powerful."
+            tasks: [{ id: "4002000000000131" type: "item" item: "mowziesmobs:elokosa_paw_full" }]
+            rewards: [
+                { id: "4002000000000132" type: "xp_levels" xp_levels: 10 }
+            ]
+            x: 0.0d  y: 4.0d
+        }
+    ]
+    title: "&5\uD83C\uDF0F Mowzie's Mobs"
+}
